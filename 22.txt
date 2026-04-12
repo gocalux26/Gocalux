@@ -1,0 +1,1 @@
+<button class="btn" onclick="payNow()">Pay Now</button>

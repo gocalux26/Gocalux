@@ -1,0 +1,10 @@
+GocaLux/
+│── index.html
+│── about.html
+│── services.html
+│── booking.html
+│── gallery.html
+│── contact.html
+│── admin.html ⭐ NEW
+│── style.css
+│── script.js

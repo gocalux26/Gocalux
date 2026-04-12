@@ -1,0 +1,22 @@
+<section style="text-align:center;">
+  <h1>Our Luxury Packages</h1>
+
+  <div class="card">
+    <h3>Basic Shine</h3>
+    <p>$30</p>
+    <p>Exterior wash + dry + tire shine</p>
+  </div>
+
+  <div class="card">
+    <h3>Premium Detail</h3>
+    <p>$80</p>
+    <p>Interior deep clean + exterior + wax</p>
+  </div>
+
+  <div class="card">
+    <h3>GocaLux VIP</h3>
+    <p>$150</p>
+    <p>Full luxury detail + deep interior restoration</p>
+  </div>
+
+</section>

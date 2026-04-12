@@ -1,0 +1,31 @@
+function bookNow() {
+  let name = document.getElementById("name").value;
+  let phone = document.getElementById("phone").value;
+  let service = document.getElementById("service").value;
+  let date = document.getElementById("date").value;
+  let time = document.getElementById("time").value;
+
+  if (!name || !phone || !date || !time) {
+    document.getElementById("msg").innerText = "Please fill everything 💕";
+    return;
+  }
+
+  let booking = { name, phone, service, date, time };
+
+  let all = JSON.parse(localStorage.getItem("bookings")) || [];
+  all.push(booking);
+  localStorage.setItem("bookings", JSON.stringify(all));
+
+  document.getElementById("msg").innerText =
+    "Booking saved ✨ We will contact you soon!";
+
+  // EMAIL ALERT (opens email app)
+  window.location.href =
+    `mailto:gocalux@example.com?subject=New Booking&body=
+Name: ${name}%0D%0APhone: ${phone}%0D%0AService: ${service}%0D%0ADate: ${date}%0D%0ATime: ${time}`;
+}
+
+// FAKE STRIPE BUTTON (real payment can be added later)
+function payNow() {
+  alert("Stripe integration ready (next step: connect real payments)");
+}
